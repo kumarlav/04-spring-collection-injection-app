@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="company" class="com.king.beans.Company">
+		<property name="projects">
+			<list>
+				<value>HSM</value>
+				<value>IEEE</value>
+				<value>TNT</value>
+			</list>
+		</property>
+		
+		<property name="managers">
+			<set>
+				<value>Arun</value>
+				<value>Ashok</value>
+				<value>Kiran</value>
+			</set>
+		</property>
+		
+		<property name="salaries">
+			<map>
+				<entry key="Arun" value="50000.00" />
+				<entry key="Ashok" value="230000.00" />
+				<entry key="Kiran" value="130000.00" />
+			</map>
+		</property>
+		
+	</bean>
+
+</beans>
